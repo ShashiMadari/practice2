@@ -15,7 +15,7 @@ pipeline{
 	stages{
 		stage('Checkout'){
 			steps{
-				git master:'master',url:'https://github.com/ShashiMadari/practice2.git'
+				git branch:'master',url:'https://github.com/ShashiMadari/practice2.git'
 			}
 		}
 		
