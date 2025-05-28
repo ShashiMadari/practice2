@@ -3,13 +3,13 @@
   become: yes
   
   tasks:
-  	- name: Copy to Tomcat
-  	  copy:
+  - name: Copy to Tomcat
+  	copy:
   	  src: '/'
   	  dest: "/opt/tomcat/webapps/MyAnsibleApp02.war"
   	  remote_src: no
   	  
-  	- name: Restart tomcat
-  	  systemd:
+  - name: Restart tomcat
+  	systemd:
   	  	name: tomcat
   	  	state: restarted
